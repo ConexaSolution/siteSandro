@@ -13,6 +13,7 @@ const FormContact = ({ref3})=>{
     })
 
     const {data, fetchSendMail} = sendMail(params)
+
     const handleParams = (e)=>{
         const name = e.target.name;
         const value = e.target.value;
@@ -22,12 +23,13 @@ const FormContact = ({ref3})=>{
         }))
     }
 
-    useEffect(()=>{        
+    useEffect(()=>{       
     },[params])
     
     const handleFecth = ()=>{
         fetchSendMail();
     }
+
     return(
         <div className="formContact" ref={ref3}>
             <img id='fundoContato' src={backContact}alt="contato" />

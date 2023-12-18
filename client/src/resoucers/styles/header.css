@@ -5,8 +5,7 @@
     top: 0;
     left: 0;
     height: 100px;
-    width: 100vw;
-    
+    width: 100vw;    
     z-index: 200;
     
 }
@@ -37,12 +36,13 @@
 .optionHead{
     display: flex;
     position: relative;
-    width: 100%;
+    width: calc( 100% 60px);
     height: 100%;
     bottom: 0;
     flex-direction: row;
     background-color: aliceblue;
     box-shadow: 0px 5px 10px rgba(183, 183, 183, 0.249);
+    padding: 0 30px;
 }
 
 .optionHead span{
@@ -64,17 +64,28 @@
     display: flex;
     flex-direction: row;
     width: 70%;
-    
+    align-items: center;    
 }
+
 #navInfo span{
     text-align: center;
-    line-height: 7;
-    color: rgb(5, 4, 20);
+    line-height: 2;
+    color: aliceblue;
+    background-color: rgb(23, 35, 45);
     width: 25%;
-    font-size: 11px;
-
+    font-size: 12px;
+    height: 33.33%;
+    border: 1px solid rgba(0, 39, 39, 0.212);
+    border-radius: 40px;
+    transition: 0.3s;
 }
+
+#navInfo span:hover{
+    background-color: rgb(225, 232, 238);
+    color:rgb(23, 35, 45);
+}
+
 #navInfo span:not(:last-child){
-    margin-right: 50px;
+    margin-right: 50px;   
     
 }

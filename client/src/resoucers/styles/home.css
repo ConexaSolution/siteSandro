@@ -3,3 +3,10 @@
     width: 100vw;
     z-index: -100;  
 }
+
+#mainBack{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -99; 
+}

@@ -4,8 +4,9 @@ import Services from "./Services";
 import InfoAbout from "./infoAbout";
 import '../resoucers/styles/home.css'
 import FormContact from "./FormContact";
-import React,{ useEffect, useRef } from "react";
+import React,{ useRef } from "react";
 import Footer from "./Footer";
+import mainBack from '../resoucers/images/mainBack.png';
 
 const Home = ()=>{
 
@@ -15,6 +16,7 @@ const Home = ()=>{
 
     return(
         <div className="home">
+            <img id="mainBack" src={mainBack} alt="fundo" />
             <Header ref1={ref1} ref2={ref2} ref3={ref3}/>
             <SlideShow ref1={ref1}/>
             <InfoAbout />

@@ -76,3 +76,11 @@ input:focus{
 .itemInsert input{
     height: 50px;
 }
+.form #insertMsg textarea{
+    height: 200px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: rgb(235, 245, 255);
+    padding: 20px;
+}

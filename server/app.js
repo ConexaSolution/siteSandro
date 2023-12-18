@@ -5,48 +5,55 @@ require('dotenv').config();
 const cors = require('cors');
 
 const app = express();
-const port = 5174;
+const port = 3000;
 
 app.use(bodyParser.json());
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://intranethublog.net:5173'],
+  origin: ['http://localhost:5173', 'http://021automacoes.com.br','http://localhost'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 200,
 }));
 
+const UserEmail = process.env.CONTA_EMAIL;
+const senha = process.env.SENHA_EMAIL;
+
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
-    user: 'seuemail@gmail.com',
-    pass: 'sua_senha_ou_senha_de_aplicativo',
+    
+    user: UserEmail,
+    pass: senha,
+  },
+  tls: {
+    ciphers: 'SSLv3',
   },
 });
 
 app.post('/sendEmail', async (req, res) => {
-  const { nome, email, phone, msg } = req.body;
+  const { name, email, phone, message } = req.body;
 
-  // Configurar o e-mail
+ 
   const mailOptions = {
-    from: 'seuemail@gmail.com',
-    to: 'seuemail@gmail.com',
+    from: UserEmail,
+    to: UserEmail,
     subject: 'Novo formulário de contato do site',
-    text: `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${phone}\nMensagem: ${msg}`,
+    text: `Nome: ${name}\nE-mail: ${email}\nTelefone: ${phone}\nMensagem: ${message}`,
   };
 
-  // Enviar o e-mail
+ 
   try {
     await transporter.sendMail(mailOptions);
-    res.status(200).send('Formulário enviado com sucesso!');
+    res.status(200).json({ message: 'Formulário enviado com sucesso!' });
   } catch (error) {
     console.error('Erro ao enviar o e-mail:', error);
-    res.status(500).send('Erro ao processar o formulário');
+    res.status(500).json({ error: 'Erro ao processar o formulário' });
   }
 });
 
 app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
+  console.log(`Servidor rodando na porta: ${port}`);
 });

@@ -9,7 +9,7 @@ const Footer = ()=>{
             <img src={logoIcon} alt="logo" />
             <div id='infoFooter'> 
                 <h3>INSTALAÇÃO, MANUTENÇÃO E CONFIGURAÇÃO</h3>
-                <h4>E-mail para contato:</h4>
+                <span>E-mail para contato:</span>
                 <span>contato021ti@gmail.com</span>              
             </div>
         </div>

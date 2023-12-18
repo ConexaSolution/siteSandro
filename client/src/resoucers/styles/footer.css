@@ -1,12 +1,18 @@
+#blurDiv,
 .footer{
     position: relative;
     display: flex;
     height: 150px;
-    padding: 20px;
-
+    padding: 20px 20px 0px 50px;
+    margin: 0;
+    background-color: rgba(23, 35, 45, 0.986);
+    bottom: 0;
 }
 
 .footer img{
+    position: relative;
+    top: 20px;
+    left:56px;
     height: 70px;
     width: 50px;
     
@@ -14,7 +20,7 @@
 
 #infoFooter{
     padding: 0 10rem;
-    color:rgb(0, 49, 49);
+    color:rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
 }
@@ -23,11 +29,3 @@
     line-height: 0;
 }
 
-.form #insertMsg textarea{
-    height: 200px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    color: rgb(235, 245, 255);
-    padding: 20px;
-}

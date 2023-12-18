@@ -6,15 +6,16 @@ const sendMail = (emailData)=>{
     const fetchSendMail = async ()=>{        
        
         try{
-            const response = await fetch(`http://localhost:5174/sendEmail`,{
+            const response = await fetch(`http://021automacoes.com.br:3000/sendEmail`,{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({emailData})
+                body: JSON.stringify(emailData)
             });
             if(response.ok){
                 const data = await response.json();
+                console.log(data)
                 setData(data)
             }else{
                 throw new Error('Erro ao enviar email')
