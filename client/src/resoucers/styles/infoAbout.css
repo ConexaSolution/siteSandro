@@ -1,0 +1,29 @@
+.infoAbout{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    top: 350px;
+    left: 0;/* 
+    background-color: coral; */
+   
+}
+
+.infoAbout div:not(:last-child){
+    margin-right: 100px;
+}
+
+.infoAbout div{
+    background-color: rgb(23, 35, 45);
+    height: 220px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.infoAbout h3{
+    color: rgb(143, 155, 179);
+}

@@ -1,0 +1,78 @@
+.formContact{
+    display: flex;
+    flex-direction: row;
+    width:calc( 100vw - 40px);
+    height: 500px;
+    position: relative;    
+    background-color: rgba(23, 35, 45, 0.964);
+    
+    padding: 10px 20px;
+}
+
+#fundoContato{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 10px);
+    left: 0;
+    z-index: -1;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0 ;
+}
+
+#formInfo{
+    padding-left: 50px;
+    width: calc( 50% - 50px);
+}
+
+#formInfo div:not(:last-child){
+    margin-bottom: 100px;
+}
+
+.itemInsert{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputs{
+    height: 100%;
+    width: 100%;
+}
+
+.inputs button{
+    position: absolute;
+    bottom: 20px;
+    background-color: aliceblue;
+    color: rgb(23, 35, 45);
+}
+
+#insertContact{
+    display: flex;
+    flex-direction: row;
+}
+
+#insertContact input{
+    width: calc( 100% - 10px);
+}
+
+#insertContact input:not(:last-child){
+    margin-right: 40px;
+}
+
+input{
+    background-color: rgb(23, 35, 45);
+    border:none;
+    border-bottom: 1px solid white;
+    font-size: 14pt;
+}
+
+input:focus{
+    outline: none;
+}
+
+.itemInsert input{
+    height: 50px;
+}
