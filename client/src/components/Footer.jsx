@@ -6,7 +6,7 @@ const Footer = ()=>{
 
     return(
         <div className="footer">
-            <img src={logoIcon} alt="logo" />
+            <div id='imgFooter'><img src={logoIcon} alt="logo" /></div>            
             <div id='infoFooter'> 
                 <h3>INSTALAÇÃO, MANUTENÇÃO E CONFIGURAÇÃO</h3>
                 <span>E-mail para contato:</span>

@@ -1,12 +1,12 @@
 .formContact{
+    position: relative; 
     display: flex;
-    flex-direction: row;
-    width:calc( 100vw - 40px);
-    height: 500px;
-    position: relative;    
+    flex-wrap: wrap;
+    width:100%;
+    max-height: auto ;
     background-color: rgba(23, 35, 45, 0.964);
-    
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 #fundoContato{
@@ -18,8 +18,9 @@
 }
 .form{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 50%;
+    max-width: 100%;
     padding: 10px 0 ;
 }
 
@@ -43,10 +44,9 @@
 }
 
 .inputs button{
-    position: absolute;
-    bottom: 20px;
     background-color: aliceblue;
     color: rgb(23, 35, 45);
+    margin: 0.5em;
 }
 
 #insertContact{

@@ -52,8 +52,9 @@ const FormContact = ({ref3})=>{
                     <div id='insertMsg'className='itemInsert'>
                         <span>Mensagem</span>
                         <textarea value={params.message} onChange={handleParams} name='message'id='inputText'></textarea>
+                        <button onClick={handleFecth}>Enviar</button>
                     </div>
-                    <button onClick={handleFecth}>Enviar</button>
+                    
                 </div>
             </div>
             <div className="form" id='formInfo'>

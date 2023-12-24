@@ -3,16 +3,15 @@
     flex-direction: row;
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     height: auto;
     left: 0;
-    top:0;
+    top:0px;
     justify-content: center;
     z-index: -1;
-    background-color: aquamarine;
 }
 
 .slide-show img{
-    height: 100%;
-    width: 100vw;
+    height: auto;
+    width: 100%;
 }
