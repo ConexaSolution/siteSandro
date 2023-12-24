@@ -17,7 +17,7 @@ const Services = ({ref2}) => {
                     <span><h3>SEGURANÇA</h3></span>
                     <div className='itemsSeg'>
                         <div className='itemServices'>
-                            <div><img src={monitorsIcon} alt="" /></div>
+                            <div className='infoImg'><img src={monitorsIcon} alt="" /></div>
                             <div className="infoServices">
                                 <h3>CFTV</h3>
                                 <span>Você pode monitorar seu patrimônio de qualquer lugar e a qualquer momento por meio de uma conexão online. Oferecemos vigilância confiável em todas as condições climáticas.
@@ -25,7 +25,7 @@ const Services = ({ref2}) => {
                             </div>
                         </div>
                         <div className='itemServices'>
-                            <div><img src={camsIcon} alt="" /></div>
+                            <div className='infoImg'><img src={camsIcon} alt="" /></div>
                             <div className="infoServices">
                                 <h3>MONITORAMENTO 24h DE SISTEMAS DE ALARME/CÂMERAS</h3>
                                 <span>
@@ -33,8 +33,10 @@ const Services = ({ref2}) => {
                                 </span>
                             </div>
                         </div>
+                        </div>
+                        <div className='itemsSeg'>
                         <div className='itemServices'>                                
-                                <div><img src={webElecIcon}alt="" /></div>
+                                <div className='infoImg'><img src={webElecIcon}alt="" /></div>
                                 <div className="infoServices">
                                     <h3>Alarme, Cerca elétrica e Concertina</h3>
                                     <span>Proteja todo o perímetro do seu patrimônio com integração opcional à central de alarme. Quando acionada, a sirene alerta imediatamente a equipe de monitoramento.
@@ -42,7 +44,7 @@ const Services = ({ref2}) => {
                                 </div>
                             </div>
                             <div className='itemServices'>
-                                <div><img src={devicesIcon}alt="" /></div>
+                                <div className='infoImg'><img src={devicesIcon}alt="" /></div>
                                 <div className="infoServices">
                                     <h3>Fechaduras Elétricas, Biométricas e com senha</h3>
                                     <span>Afixadas nas portas, permitem acesso via chaveiro, cartão, senhas, digital e aplicativos móveis. Amplamente usado em hotéis, condomínios e empresas, ganha espaço nas residências pela praticidade e segurança, eliminando a necessidade de chaves e preocupações com esquecimentos ou portas abertas.</span>
@@ -55,14 +57,14 @@ const Services = ({ref2}) => {
                     <span><h3>TELECOMUNICAÇÕES</h3></span>
                     <div className='itemsSeg'>
                         <div className='itemServices'>
-                            <img src={callsIcon} alt=""/>
+                            <div className='infoImg'><img src={callsIcon} alt=""/></div>
                             <div className="infoServices">
                                 <h3>Interfonia, Vídeo Porteiro e PABX</h3>
                                 <span>Soluções completas em interfonia residencial, coletiva e vídeo porteiro para comunicação eficaz entre o interior e exterior de residências, apartamentos e empresas, proporcionando comodidade e segurança. O PABX permite chamadas externas simultâneas para todos os ramais da empresa, com linhas conectadas facilitando chamadas gratuitas entre os ramais internos.</span>
                             </div>                        
                         </div>
                         <div className='itemServices'>
-                            <div><img src={cabsIcon} alt="" /></div>
+                            <div className='infoImg'><img src={cabsIcon} alt="" /></div>
                             <div className="infoServices" id='cab'>
                                 <h3>Cabeamento Estruturado</h3>
                                 <span>

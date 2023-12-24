@@ -1,29 +1,43 @@
 .infoAbout{
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    width: 100vw;
-    top: 750px;
-    left: 0;/* 
+    max-width: 100%;
+    top: -10px;
+    left: 0;
+    box-sizing: border-box;/* 
     background-color: coral; */
    
 }
 
 .infoAbout div:not(:last-child){
-    margin-right: 100px;
+    margin-right: 2em;
 }
 
-.infoAbout div{
+.infoAbout div{    
+    flex: 1;
     background-color: rgb(23, 35, 45);
-    height: 220px;
-    width: 250px;
-    padding: 15px;
+    min-height: 220px;
+    max-width: 100%;
+    padding: 1em;
     border-radius: 5px;
     border: 1px solid white;
+    box-sizing: border-box;
+    
 }
 
 .infoAbout h3{
     color: rgb(143, 155, 179);
+}
+
+@media only screen and (max-width:600px) {
+    .infoAbout{
+        flex-direction: column;
+       
+    }
+    .infoAbout div:not(:last-child){
+        margin: 0;
+    }
 }
