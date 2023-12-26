@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Slides from '../components/Slides';
 import '../resoucers/styles/slideShow.css';
-import image1 from '../resoucers/images/capa2.jpg'
-
+import image1 from '../resoucers/images/capa2.jpg';
 
 const slidesData = [image1];
 
