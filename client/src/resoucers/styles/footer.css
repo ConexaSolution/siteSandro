@@ -17,7 +17,7 @@
 }
 
 .footer #imgFooter{
-    padding: 1rem;
+    padding: 1em;
     flex: 1;
 }
 
@@ -43,17 +43,26 @@
     }
     .footer #imgFooter{
         display: flex;
-        min-width: 40%;
+        max-width: 50%;
         align-items: center;
         justify-content: center;
     }
-    #infoFooter{
-        color:rgb(255, 255, 255);
+    #infoFooter{        
         display: flex;
         flex-direction: column;
+        color:rgb(255, 255, 255);
         min-width: 50%;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
+        height: auto;
+        padding: 0em;
     }
+
+    #infoFooter span{ 
+        padding: 0;
+    }
+    #infoFooter h3{ 
+        font-size: 11pt;
+    } 
 }
 
