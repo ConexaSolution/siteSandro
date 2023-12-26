@@ -1,5 +1,5 @@
 import '../resoucers/styles/formContact.css'
-import InputMask, { ReactInputMask } from 'react-input-mask';
+import MaskedInput from 'react-text-mask';
 import backContact from '../resoucers/images/backContact.jpg'
 import sendMail from '../scripts/fetchEmail';
 import { useEffect, useState } from 'react';
@@ -46,7 +46,14 @@ const FormContact = ({ref3})=>{
                         </div>
                         <div id='insertTell'className='itemInsert'>
                             <label>Seu número de telefone*</label>
-                            <InputMask value={params.phone} onChange={handleParams} mask="(99) 99999-9999" type="tel" id="telefone" name="phone" placeholder="(99) 99999-9999" required/>
+                            <MaskedInput
+                                value={params.phone}
+                                name='phone'
+                                onChange={handleParams}
+                                mask={['(', /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
+                                placeholder="(99) 99999-9999"
+                                required
+                            />
                         </div>
                     </div>
                     <div id='insertMsg'className='itemInsert'>
