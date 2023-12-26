@@ -15,7 +15,6 @@ const sendMail = (emailData)=>{
             });
             if(response.ok){
                 const data = await response.json();
-                console.log(data)
                 setData(data)
             }else{
                 throw new Error('Erro ao enviar email')

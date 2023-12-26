@@ -20,12 +20,13 @@ const Header = ({ ref1, ref2, ref3 }) => {
       <div className="upBar">
         <div id="talkUs">
           <span>FALE CONOSCO</span>
-          <span>(21) 91234-5678</span>
+          <span>(21) 98168-5956 
+                (21) 99421-6846 </span>
         </div>
-        <div id="infoCall">
+        {/* <div id="infoCall">
           <span>Atendimento</span>
           <span>Seg à sex das 7h às 17h</span>
-        </div>
+        </div> */}
       </div>
     );
   };
