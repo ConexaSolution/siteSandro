@@ -71,8 +71,8 @@ const FormContact = ({ref3})=>{
                 </div>
                 <div className="info">
                     <span>Você também poderá entrar em contato conosco pelos telefones:</span>
-                    <h2>(21) 98168-5956 <img src="" alt="" /></h2>    
-                    <h2>(21) 99421-6846 <img src="" alt="" /></h2>                 
+                    <h2>(21) 98168-5956 <img src="" alt="number1" /></h2>    
+                    <h2>(21) 99421-6846 <img src="" alt="number2" /></h2>                 
                 </div>
 
             </div>
